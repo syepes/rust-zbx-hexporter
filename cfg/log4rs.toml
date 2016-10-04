@@ -1,0 +1,26 @@
+refresh_rate = 30
+
+[appenders.console]
+kind = "console"
+
+[appenders.console.encoder]
+pattern = "{d(%Y-%m-%d %H:%M:%S)} [{t}]:{T}:{L} {h({l})} {M}:{m}{n}"
+
+[[appenders.console.filters]]
+kind = "threshold"
+level = "info"
+
+[appenders.file]
+kind = "file"
+path = "logs/zbx_hexporter.log"
+
+[appenders.file.encoder]
+pattern = "{d} [{t}]:{T}:{L} {l} {M}:{m}{n}"
+
+[[appenders.file.filters]]
+kind = "threshold"
+level = "debug"
+
+[root]
+level = "trace"
+appenders = ["console", "file"]

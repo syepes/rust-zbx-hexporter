@@ -11,10 +11,7 @@ crate-type = ["dylib"]
 clippy = "*"
 log = "*"
 log4rs = { version = "*", optional = false, features = ["toml"] }
-lazy_static ="*"
-zbx = {path = 'C:\Users\syepesfernandez\Documents\00-Data\03-Personal\00-Devs\Zabbix\rust-zbx.syepes', version="*"}
-csv = "*"
-influent = "*"
+zbx = {git = "https://github.com/syepes/rust-zbx.git", version="*"}
 
 [profile.release]
 opt-level = 3
