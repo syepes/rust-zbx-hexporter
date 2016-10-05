@@ -10,7 +10,7 @@ crate-type = ["dylib"]
 [dependencies]
 clippy = "*"
 log = "*"
-log4rs = { version = "*", optional = false, features = ["toml"] }
+log4rs = { version = "*", optional = false, features = ["toml_format", "threshold_filter"] }
 zbx = {git = "https://github.com/syepes/rust-zbx.git", version="*"}
 
 [profile.release]
