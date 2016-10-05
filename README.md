@@ -9,7 +9,7 @@ The main goal will be to offload all the stored data of the `history*` tables to
  - Export CSV
 
 ## Usage
-    git clone https://github.com/syepes/sio2prom.git && cd sio2prom
+    git clone https://github.com/syepes/rust-zbx-hexporter.git && cd rust-zbx-hexporter
     cargo build --release (nightly)
     cp target/release/libzbx_hexporter.so /usr/lib/zabbix/modules/ `LoadModulePath=`
     cp -r cfg/log4rs.toml /etc/zabbix/
